@@ -11,12 +11,13 @@
 |
 */
 
+use CodeProject\Client;
+use CodeProject\Http\Controllers\ClientController;
+
 Route::get('/', function () {
     return view('welcome');
 });
 
 
 
-Route::get('client', function(){
-    return \CodeProject\Client::all();
-});
+Route::get('client', 'ClientController@index');

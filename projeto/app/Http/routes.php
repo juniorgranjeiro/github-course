@@ -21,3 +21,4 @@ Route::get('/', function () {
 
 
 Route::get('client', 'ClientController@index');
+Route::post('client', 'ClientController@store');

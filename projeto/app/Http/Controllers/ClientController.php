@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use CodeProject\Http\Requests;
 use CodeProject\Http\Controllers\Controller;
+use  \CodeProject\Client;
 
 class ClientController extends Controller
 {
@@ -38,7 +39,7 @@ class ClientController extends Controller
      */
     public function store(Request $request)
     {
-        //
+    return Client::create($request->all());
     }
 
     /**
